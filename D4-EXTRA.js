@@ -128,14 +128,33 @@ console.log("Extra.4 Il più costoso è:",maxShoppingCart(shoppingCart));
  Crea una funzione chiamata "latestShoppingCart" che riceve l'array "shoppingCart" e ritorna l'ultimo elemento.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function latestShoppingCart (array)
+{
+    const lasestObj = array.pop();
+    return lasestObj;
+}
+
+console.log("Extra.5 L'ultimo elemento inserito è:",latestShoppingCart(shoppingCart));
 
 /* EXTRA 6
  Crea una funzione chiamata "loopUntil" che riceve un numero intero come parametro con valore tra 0 e 9.
  La funzione è composta da un ciclo che stampa un numero casuale tra 0 e 9 finchè il numero casuale non è maggiore di x per tre volte di fila.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+// function loopUntil (number)
+// {
+//     let count = 0;
+//     let numero;
+//     do{
+//          numero = Math.floor(Math.random()*10);
+//          count ++;
+//          return numero;
+//     }while(numero < number)
+
+    
+// }
+
+// console.log("Extra.6", loopUntil());
 
 /* EXTRA 7
 Crea una funzione chiamata "average" che riceve un array come parametro e ne ritorna la media aritmetica. La funzione salta automaticamente i valori non numerici nell'array.
