@@ -2,7 +2,16 @@
  Scrivi una funzione di nome "area", che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato..
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+
+function area (l1,l2)
+{
+    return (l1*l2)/2;
+}
+
+console.log("Es.1 Area: ",area(8,2));
+
+
+
 
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
@@ -10,21 +19,61 @@
  la loro somma moltiplicata per tre.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function crazySum (num1, num2){
+
+    if(num1 !== num2)
+    {
+        somma = num1 + num2
+    }
+    else
+    {
+        somma = (num1 + num2)*3;
+    }
+    return somma;
+}
+
+console.log("Es.2 La somma è:", crazySum(3,2));
 
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function crazyDiff (numDiff)
+{
+    if(numDiff > 19)
+    {
+        diff = (numDiff - 19)*3;
+    }
+    else 
+    {
+        diff = 19 - numDiff;
+    }
+
+    return diff;
+}
+
+console.log("Es.3 La Differenza è:",crazyDiff(21));
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
  se n è uguale a 400.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function boundary (n)
+{
+    if (n >= 20 && n <= 100 || n === 400)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+console.log("Es. 4 Vero o falso?",boundary(400));
+
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
