@@ -81,14 +81,48 @@ console.log("Es. 4 Vero o falso?",boundary(400));
  ritornare la stringa originale senza alterarla.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function epify (string)
+{
+    const checkEpicode = string.slice(0,7);
+    if(checkEpicode === "EPICODE")
+    {
+        return string;
+    }
+    else
+    {
+        const stringNuova = "EPICODE ".concat(string);
+        return stringNuova;
+    }
+
+}
+
+console.log("Es.5 La nuova stringa è:", epify("EPICODE sei tu la migliore"));
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function check3and7 (num)
+{
+    if (num % 3 === 0 || num % 7 === 0)
+    {
+        if(num % 3 === 0)
+        {
+            return num + " E' multiplo di 3";
+        }
+        else if(num % 7 === 0)
+        {
+            return num + " E' multiplo di 7";
+        }
+    }
+    else
+    {
+        return num + " Non è multiplo nè di 3 nè di 7";
+    }
+}
+
+console.log("Es.6:",check3and7(25));
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
